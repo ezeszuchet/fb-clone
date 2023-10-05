@@ -17,7 +17,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./apps/api/test/jest-e2e.json",
-    "build:api": "nest build api", 
+    "build:api": "nest build api",
     "build:auth": "nest build auth",
     "build": "npm run build:api && npm run build:auth",
     "typeorm": "npx typeorm -d ./dist/apps/auth/db/data-source.js",
