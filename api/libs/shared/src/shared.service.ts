@@ -30,4 +30,11 @@ export class SharedService {
 
     channel.ack(message);
   }
+
+  acknowledgeMessageOld(context: RmqContext) {
+    const channel = context.getChannelRef();
+    const message = context.getMessage();
+
+    channel.ack(message);
+  }
 }
